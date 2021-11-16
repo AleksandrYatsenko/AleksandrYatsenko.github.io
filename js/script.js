@@ -39,7 +39,7 @@ $(document).ready(function(){
     $('.overlay, #consultation').fadeIn('slow');
   });
 
-  $('.modal__close, .overlay').on('click', function() {
+  $('.modal__close, :not(.modal)').on('click', function() {
     $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
   });
 
